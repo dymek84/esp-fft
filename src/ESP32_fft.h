@@ -36,8 +36,8 @@ typedef enum
 
 typedef enum
 {
-  FFT_FORWARD,
-  FFT_BACKWARD
+  ESP_FFT_FORWARD,
+  ESP_FFT_BACKWARD
 } fft_direction_t;
 
 #ifndef TWO_PI 
