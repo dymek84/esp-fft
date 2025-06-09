@@ -12,7 +12,7 @@ float fft_output[FFT_N];
 #include "fft_signal.h"
 
 
-ESP_fft FFT(FFT_N, SAMPLEFREQ, FFT_REAL, FFT_FORWARD, fft_input, fft_output);
+ESP_fft FFT(FFT_N, SAMPLEFREQ, FFT_REAL, ESP_FFT_FORWARD, fft_input, fft_output);
 
 void setup() {
   Serial.begin(115200); // use the serial port
