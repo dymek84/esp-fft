@@ -149,16 +149,16 @@ void ESP_fft::execute()
 {
 
   if (_type == FFT_REAL) {
-      if (_direction == FFT_FORWARD)  
+      if (_direction == ESP_FFT_FORWARD)  
         rfft();
       else
-      if (_direction == FFT_BACKWARD) 
+      if (_direction == ESP_FFT_BACKWARD) 
         irfft();
   } else if (_type == FFT_COMPLEX) {
-      if (_direction == FFT_FORWARD)  
+      if (_direction == ESP_FFT_FORWARD)  
         fft();
       else
-      if (_direction == FFT_BACKWARD) 
+      if (_direction == ESP_FFT_BACKWARD) 
         ifft();
     }
 }
